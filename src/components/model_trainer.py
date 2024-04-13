@@ -223,9 +223,7 @@ class ModelTrainer:
                 obj=custom_model,
             )
 
-            self.utils.upload_file(from_filename=self.model_trainer_config.trained_model_path,
-                                   to_filename="model.pkl",
-                                   bucket_name=AWS_S3_BUCKET_NAME)
+
 
             return best_model_score
 
